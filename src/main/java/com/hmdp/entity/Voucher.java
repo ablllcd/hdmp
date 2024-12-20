@@ -46,7 +46,6 @@ public class Voucher implements Serializable {
     /**
      * 副标题
      */
-    @TableField("sub_title")
     private String subTitle;
 
     /**

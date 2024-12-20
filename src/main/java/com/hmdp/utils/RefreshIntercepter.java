@@ -30,7 +30,7 @@ public class RefreshIntercepter implements HandlerInterceptor {
 
         // 2.根据token去redis查找用户
         Map<Object, Object> entries = stringRedisTemplate.opsForHash().entries(LOGIN_USER + uuid);
-        if (entries == null) {
+        if (entries.isEmpty()) {
             return true;
         }
         UserDTO userDTO = BeanUtil.fillBeanWithMap(entries, new UserDTO(), false);

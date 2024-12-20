@@ -16,4 +16,7 @@ public class RedisConstants {
 
     public static final String CACHE_SHOP_TYPE_LIST = "cache:shop-type:list";
 
+
+    public static final String LOCK_PREFIX = "lock:";
+
 }
