@@ -31,6 +31,7 @@ public class VoucherOrderController {
      */
     @PostMapping("/seckill/{id}")
     public Result createVoucherOrder(@PathVariable("id") long voucherID) {
-        return voucherOrderService.createOrder(voucherID);
+//        return voucherOrderService.createOrder(voucherID);
+        return voucherOrderService.createOrder2(voucherID);
     }
 }
